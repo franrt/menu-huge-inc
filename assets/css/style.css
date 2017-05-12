@@ -169,3 +169,30 @@ nav.header-in {
 
 
 /*Javascript style toggle for menu appear and disappear*/
+
+.solid #toggle .menu {
+    background: #fff;
+}
+
+.solid #toggle .menu:after {
+    background-color: #fff;
+}
+
+.solid #toggle .menu:before {
+    background-color: #fff;
+}
+
+
+/*Cambia logo de fucsia a blanco */
+
+nav.open #logo .logo {
+    background-image: url(../images/logo-white.png);
+    background-size: 76px 76px;
+}
+
+
+/*Javascript style toggle for appear and disappear scroll of webpage*/
+
+.overflow-hidden {
+    overflow: hidden;
+}

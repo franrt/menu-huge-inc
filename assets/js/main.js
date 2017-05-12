@@ -4,13 +4,20 @@ document.getElementById("toggle").addEventListener("click", function(event) {
     document.getElementById("body").classList.toggle("overflow-hidden");
 });
 
-var lastScrollTOp = 0;
+var lastScrollTop = 0;
 window.addEventListener("scroll", function() {
     var currentScroll = window.pageYOffset || document.body.scrollTop;
-    if (currentScroll > lastScrollTOp) {
-        console.log("down"); // down
+    if (currentScroll > lastScrollTop) {
+        document.getElementById("header").classList.remove("header-in");
+        document.getElementById("header").style.opacity = 0;
     } else {
-        console.log("up"); //up
+        document.getElementById("header").classList.add("header-in");
+        document.getElementById("header").classList.add("solid");
+        document.getElementById("header").style.opacity = 1;
     }
-    lastScrollTOp = currentScroll; //ignorar por ahora -_-
+    if (currentScroll <= 3) {
+        document.getElementById("header").classList.remove("solid");
+        document.getElementById("header").classList.remove("header-in");
+    }
+    lastScrollTop = currentScroll; //ignorar por ahora -_-
 }, false);
