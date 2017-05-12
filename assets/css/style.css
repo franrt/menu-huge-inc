@@ -4,7 +4,8 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    color: #fff;
+    color: #ffb9dc;
+    /*aca color es fff*/
     height: 80px;
     z-index: 1000;
     margin-top: 0;
@@ -58,19 +59,19 @@ nav {
     z-index: -1;
 }
 
-.menu:before {
+.menu:after {
     top: -8px;
 }
 
-.menu:after {
+.menu:before {
     top: 8px;
 }
 
-#toggle:toggle .menu:before {
+#toggle:hover .menu:before {
     top: -9px;
 }
 
-#toggle:toggle .menu:after {
+#toggle:hover .menu:after {
     top: 9px;
 }
 
