@@ -4,8 +4,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    color: #ffb9dc;
-    /*aca color es fff*/
+    color: #fff;
     height: 80px;
     z-index: 1000;
     margin-top: 0;
@@ -139,7 +138,7 @@ nav ul li a {
     width: 100%;
     display: block;
     padding: 8px 0 0;
-    letter-spacing: -0.6em;
+    letter-spacing: -0.06em;
 }
 
 nav ul li a:hover {
@@ -160,3 +159,13 @@ nav.open ul li {
     font-size: 60px;
     visibility: visible !important;
 }
+
+
+/*Javascript style toggle for menu appear and disappear*/
+
+nav.header-in {
+    background-color: rgba(217, 40, 130, 0.9);
+}
+
+
+/*Javascript style toggle for menu appear and disappear*/
